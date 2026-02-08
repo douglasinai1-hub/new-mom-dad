@@ -1,97 +1,366 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Newborn Diaper Rash Wipes Comparison: Safe Choices for Sensitive Skin</title>
-<meta name="description" content="Evidence-based comparison of baby wipes for newborn diaper rash and sensitive skin. Safety checklist, ingredient red flags, and dermatologist-informed buying framework.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Newborn Diaper Rash Wipes Comparison: Safe Choices for Sensitive Skin</title>
+  <meta name="description" content="Evidence-based comparison of baby wipes for newborn diaper rash and sensitive skin. Safety checklist, ingredient red flags, and dermatologist-informed buying framework." />
+
+  <style>
+    :root{
+      --bg: #faf7ff;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --brand: #7c3aed;
+      --brand2: #06b6d4;
+      --border: #e5e7eb;
+      --shadow: 0 10px 30px rgba(0,0,0,.06);
+      --radius: 18px;
+      --max: 920px;
+    }
+
+    *{ box-sizing: border-box; }
+    body{
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: radial-gradient(1200px 600px at 10% 0%, rgba(124,58,237,.10), transparent 55%),
+                  radial-gradient(900px 500px at 90% 10%, rgba(6,182,212,.10), transparent 55%),
+                  var(--bg);
+      line-height: 1.6;
+    }
+
+    a{ color: var(--brand); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    header{
+      padding: 44px 16px 20px;
+    }
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    .hero{
+      background: linear-gradient(135deg, rgba(124,58,237,.12), rgba(6,182,212,.10));
+      border: 1px solid rgba(124,58,237,.18);
+      border-radius: var(--radius);
+      padding: 26px 22px;
+      box-shadow: var(--shadow);
+    }
+    .badge{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(124,58,237,.10);
+      border: 1px solid rgba(124,58,237,.22);
+      color: #4c1d95;
+      margin-bottom: 12px;
+    }
+    h1{
+      margin: 0 0 8px 0;
+      font-size: 34px;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+    .sub{
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    main{ padding: 12px 16px 60px; }
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media (min-width: 860px){
+      .grid{ grid-template-columns: 2fr 1fr; gap: 18px; }
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 18px;
+      box-shadow: var(--shadow);
+    }
+
+    h2{
+      margin: 0 0 10px 0;
+      font-size: 20px;
+      letter-spacing: -0.01em;
+    }
+    h3{
+      margin: 14px 0 6px 0;
+      font-size: 16px;
+    }
+    p{ margin: 8px 0; color: var(--text); }
+    .muted{ color: var(--muted); }
+
+    .toc a{
+      display: block;
+      padding: 10px 10px;
+      border-radius: 12px;
+      border: 1px solid transparent;
+    }
+    .toc a:hover{
+      background: rgba(124,58,237,.06);
+      border-color: rgba(124,58,237,.18);
+      text-decoration: none;
+    }
+
+    ul, ol{ margin: 10px 0 0 18px; }
+    li{ margin: 6px 0; }
+
+    .callout{
+      border-left: 4px solid var(--brand2);
+      background: rgba(6,182,212,.08);
+      border-radius: 14px;
+      padding: 12px 12px;
+      margin-top: 10px;
+    }
+    .danger{
+      border-left-color: #ef4444;
+      background: rgba(239,68,68,.08);
+    }
+    .tldr{
+      border-left-color: var(--brand);
+      background: rgba(124,58,237,.08);
+    }
+
+    table{
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      overflow: hidden;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      margin-top: 10px;
+    }
+    th, td{
+      text-align: left;
+      padding: 12px 12px;
+      vertical-align: top;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+    th{
+      background: rgba(124,58,237,.06);
+      color: #111827;
+      font-weight: 650;
+    }
+    tr:last-child td{ border-bottom: none; }
+
+    .pill{
+      display: inline-block;
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--muted);
+      margin-right: 6px;
+      margin-top: 6px;
+    }
+
+    footer{
+      padding: 0 16px 30px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    hr{
+      border: none;
+      height: 1px;
+      background: var(--border);
+      margin: 14px 0;
+    }
+    .small{ font-size: 13px; color: var(--muted); }
+  </style>
 </head>
 
 <body>
+  <header>
+    <div class="wrap">
+      <div class="hero">
+        <div class="badge">🍼 Newborn-friendly • Sensitive-skin focused • Framework-based</div>
+        <h1>Newborn Diaper Rash Wipes Comparison</h1>
+        <p class="sub">A practical, safety-first way to compare wipes for diaper rash and very sensitive newborn skin—without brand hype.</p>
+        <div style="margin-top:10px">
+          <span class="pill">Fragrance-free</span>
+          <span class="pill">Minimal ingredients</span>
+          <span class="pill">Lower irritation risk</span>
+          <span class="pill">Decision checklist</span>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<h1>Newborn Diaper Rash Wipes Comparison: Safe Choices for Sensitive Skin</h1>
+  <main>
+    <div class="wrap grid">
+      <!-- Main content -->
+      <article class="card">
+        <section id="tldr" class="callout tldr">
+          <h2>TL;DR — Quick Decision Guide</h2>
+          <ul>
+            <li><strong>Choose fragrance-free</strong> wipes (avoid “lightly scented”).</li>
+            <li><strong>Prefer short ingredient lists</strong>—often less irritation risk.</li>
+            <li><strong>Avoid alcohol</strong> (e.g., Alcohol denat.) and strong essential oils for sensitive newborns.</li>
+            <li><strong>Water-based wipes</strong> are often the gentlest starting point.</li>
+            <li>If rash is persistent, severe, oozing, or your baby seems unwell, <strong>consult a pediatrician</strong>.</li>
+          </ul>
+        </section>
 
-<h2>TL;DR — Quick Decision Guide</h2>
-<ul>
-<li>Choose fragrance-free wipes.</li>
-<li>Prefer minimal ingredient formulas.</li>
-<li>Avoid alcohol and strong essential oils.</li>
-<li>Water-based wipes are often gentler.</li>
-<li>If rash persists, consult a pediatrician.</li>
-</ul>
+        <section id="who">
+          <h2>Who This Guide Is For</h2>
+          <p>This comparison is for parents of newborns (0–12 months) dealing with diaper rash or very sensitive skin. It focuses on <strong>irritation risk and practical selection</strong> rather than “best brand” claims.</p>
+          <p class="small">Educational only; not medical advice.</p>
+        </section>
 
-<h2>Who This Guide Is For</h2>
-<p>This guide helps parents of newborns (0–12 months) compare baby wipes when dealing with diaper rash or highly sensitive skin. It focuses on safety and irritation risk rather than brand marketing.</p>
+        <section id="why">
+          <h2>Why Wipes Matter During Diaper Rash</h2>
+          <p>When a rash is present, the skin barrier is already compromised. That means ingredients, friction, and moisture balance can make a noticeable difference in comfort and irritation.</p>
+        </section>
 
-<p>This article is educational only and does not replace medical advice.</p>
+        <section id="framework">
+          <h2>Comparison Framework (Better Than “Top 10” Lists)</h2>
+          <p>Use these criteria to compare wipes for a rash-prone newborn:</p>
+          <ul>
+            <li><strong>Ingredient simplicity</strong> (shorter lists are often safer for reactive skin)</li>
+            <li><strong>Fragrance-free labeling</strong> (avoid “masking” scents)</li>
+            <li><strong>Slip / moisture level</strong> (too dry increases friction; too wet may feel uncomfortable)</li>
+            <li><strong>pH / skin compatibility</strong> (look for “pH-balanced” when available)</li>
+            <li><strong>Sensitivity testing claims</strong> (e.g., dermatologist-tested—helpful but not a guarantee)</li>
+          </ul>
+        </section>
 
-<h2>Why Baby Wipes Matter for Diaper Rash</h2>
+        <section id="table">
+          <h2>Comparison Table: Types of Wipes</h2>
+          <p class="muted">This table compares wipe “types” so you can pick a safe starting point based on your baby’s sensitivity.</p>
 
-<p>Newborn skin has a thinner protective barrier and can react more strongly to irritants. During diaper rash, skin is already inflamed, making wipe selection more important.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Pros</th>
+                <th>Cons / Watch-outs</th>
+                <th>Best For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Water-based wipes</strong></td>
+                <td>Minimal ingredients; commonly lower irritation risk</td>
+                <td>May dry out faster; some feel thinner</td>
+                <td>Very sensitive or rash-prone newborns</td>
+              </tr>
+              <tr>
+                <td><strong>“Plant-based” wipes</strong></td>
+                <td>Often softer materials; marketing emphasis on “gentle”</td>
+                <td>Some include essential oils/plant extracts that can irritate reactive skin</td>
+                <td>Mild sensitivity (after you confirm no irritants)</td>
+              </tr>
+              <tr>
+                <td><strong>Extra-moisturizing wipes</strong></td>
+                <td>Less friction during cleaning</td>
+                <td>Often longer ingredient lists → more potential irritants</td>
+                <td>Moderate dryness / friction issues (if ingredients are clean)</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
-<h2>Comparison Framework (Instead of “Best Brand” Lists)</h2>
+        <section id="redflags" class="callout danger">
+          <h2>Ingredient Red Flags (Fast Checklist)</h2>
+          <ul>
+            <li><strong>Fragrance / Parfum</strong> (common irritant)</li>
+            <li><strong>Alcohol denat.</strong> or strong solvents (can sting/dry)</li>
+            <li><strong>Essential oils</strong> (lavender/citrus/etc.) for highly sensitive newborns</li>
+            <li><strong>Complex “botanical blends”</strong> with many extracts (higher reaction risk)</li>
+          </ul>
+          <p class="small">Note: Preservatives are necessary to prevent microbial growth. The goal is not “no preservatives,” but <strong>gentler formulas</strong>.</p>
+        </section>
 
-<p>Rather than recommending a single product, use these evaluation criteria:</p>
+        <section id="mistakes">
+          <h2>Common Mistakes Parents Make</h2>
+          <ul>
+            <li>Picking scented wipes because they “smell clean.”</li>
+            <li>Switching multiple products at once (hard to identify the trigger).</li>
+            <li>Assuming “natural” always means safer.</li>
+          </ul>
+        </section>
 
-<ul>
-<li>Ingredient simplicity</li>
-<li>Fragrance-free labeling</li>
-<li>Moisture balance</li>
-<li>pH compatibility</li>
-<li>Dermatologist testing claims</li>
-</ul>
+        <section id="test">
+          <h2>How to Test a New Wipe Safely</h2>
+          <ol>
+            <li>Try on a small area first (e.g., outer thigh).</li>
+            <li>Watch for redness, bumps, or discomfort over 24 hours.</li>
+            <li>Introduce only one new product at a time.</li>
+          </ol>
+        </section>
 
-<h2>Comparison Table: Types of Wipes</h2>
+        <section id="faq">
+          <h2>FAQ</h2>
 
-<table border="1">
-<tr>
-<th>Type</th>
-<th>Pros</th>
-<th>Cons</th>
-<th>Best For</th>
-</tr>
+          <h3>Are water wipes always best for diaper rash?</h3>
+          <p>They’re often a good starting point because they tend to have fewer ingredients, but every baby is different—always check the full ingredient list.</p>
 
-<tr>
-<td>Water-based wipes</td>
-<td>Minimal ingredients, lower irritation risk</td>
-<td>May dry faster</td>
-<td>Severe sensitivity</td>
-</tr>
+          <h3>Should I avoid wipes entirely during a rash?</h3>
+          <p>For severe rash, some caregivers prefer rinsing with water and patting dry to minimize friction. If symptoms persist, ask a pediatrician for guidance.</p>
 
-<tr>
-<td>Plant-based wipes</td>
-<td>Marketing appeal, sometimes softer</td>
-<td>Essential oils may irritate</td>
-<td>Mild sensitivity only</td>
-</tr>
+          <h3>Can wipes cause diaper rash?</h3>
+          <p>Yes—some babies react to certain ingredients. If you suspect this, switch to a simpler, fragrance-free formula and observe changes.</p>
+        </section>
 
-<tr>
-<td>Extra-moisturizing wipes</td>
-<td>Less friction during cleaning</td>
-<td>Longer ingredient lists</td>
-<td>Moderate dryness</td>
-</tr>
-</table>
+        <section id="related">
+          <h2>Related Guide</h2>
+          <p><a href="how-to-choose-baby-wipes.html">How to Choose Baby Wipes for Newborn Sensitive Skin</a></p>
+        </section>
 
-<h2>Ingredient Red Flags</h2>
+        <section id="sources">
+          <h2>Sources (Reference Topics)</h2>
+          <ul>
+            <li>Pediatric dermatology guidance on newborn skin barrier and irritant exposure</li>
+            <li>Infant skincare research summaries on barrier function and diaper-area dermatitis</li>
+          </ul>
+          <p class="small">Tip: When you later扩展站点权威性，可以把“Sources”换成真实可点击的权威链接（如儿科/皮肤科协会、医院科普、监管机构）。</p>
+        </section>
 
-<ul>
-<li>Fragrance / parfum</li>
-<li>Alcohol denat.</li>
-<li>Strong essential oils</li>
-<li>Harsh preservatives (depending on sensitivity)</li>
-</ul>
+        <hr />
+        <p class="small"><em>Last updated: 2026-02-08</em></p>
+      </article>
 
-<h2>Common Mistakes Parents Make</h2>
+      <!-- Sidebar -->
+      <aside class="card toc">
+        <h2>On this page</h2>
+        <a href="#tldr">TL;DR</a>
+        <a href="#who">Who it's for</a>
+        <a href="#why">Why wipes matter</a>
+        <a href="#framework">Comparison framework</a>
+        <a href="#table">Comparison table</a>
+        <a href="#redflags">Ingredient red flags</a>
+        <a href="#mistakes">Common mistakes</a>
+        <a href="#test">How to test</a>
+        <a href="#faq">FAQ</a>
+        <a href="#related">Related guide</a>
+        <a href="#sources">Sources</a>
 
-<ul>
-<li>Choosing scented wipes for newborn skin.</li>
-<li>Switching multiple products simultaneously.</li>
-<li>Assuming “natural” means safer.</li>
-</ul>
+        <hr />
+        <p class="small"><strong>Next step:</strong> Add a simple homepage that lists your articles (I can generate it for you).</p>
+      </aside>
+    </div>
+  </main>
 
-<h2>How to Test a New Wipe Safely</h2>
-
-<ol>
-<li>Test on a small area first.</li>
-<li>Monitor for redness within 24 hours.</li>
-<li>Introduce only one new product at a
+  <footer>
+    <div class="wrap">
+      <hr />
+      <p>© 2026 • Baby Buying Guides • Educational content only.</p>
+    </div>
+  </footer>
+</body>
+</html>
